@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Topeng - Museum Topeng Cirebon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Koleksi Topeng</h1>
+    <p>Kumpulan Topeng Khas Cirebon dan Nusantara</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="koleksi.html" class="active">Koleksi</a></li>
+      <li><a href="vr.html">Kunjungan VR</a></li>
+      <li><a href="kontak.html">Galeri/a></li>
+      <li><a href="schedule.html">Jadwal</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="gallery">
+      <div class="mask">
+        <img src="topeng panji.jpg" alt="Topeng Panji" width="300">
+        <div class="light-overlay"></div> 
+        <h3>Topeng Panji</h3>
+        <p>Melambangkan ketenangan dan kebijaksanaan.</p>
+      </div>
+
+      <div class="mask">
+        <img src="Topeng Samba.jpg" alt="Topeng Samba" width="300">
+        <div class="light-overlay"></div>
+        <h3>Topeng Samba</h3>
+        <p>Menggambarkan masa muda yang ceria dan penuh semangat.</p>
+      </div>
+
+      <div class="mask">
+        <img src="topeng rumyang.jpg" alt="Topeng" width="300">
+        <div class="light-overlay"></div>
+        <h3>Topeng Rumyang</h3>
+        <p>Simbol pencerahan dan kedewasaan dalam perjalanan hidup.</p>
+      </div>
+
+      <div class="mask">
+        <img src="topeng kelana.jpg" alt="Topeng" width="300">
+        <div class="light-overlay"></div>
+        <h3>Topeng Kelana</h3>
+        <p>Melambangkan kekuatan, ambisi, dan hawa nafsu manusia.</p>
+      </div>
+
+      <div class="mask">
+        <img src="Topeng Pamindo.jpg" alt="Topeng" width="300">
+        <div class="light-overlay"></div>
+        <h3>Topeng Pamindo</h3>
+        <p>Melambangkan ketenangan dan kebijaksanaan.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Museum Topeng Cirebon</p>
+  </footer>
+<script>
+const masks = document.querySelectorAll('.mask');
+
+masks.forEach(mask => {
+  const overlay = mask.querySelector('.light-overlay');
+  let angle = 0;
+
+  function rotateLight() {
+    angle += 2; // kecepatan muter
+    overlay.style.transform = `rotate(${angle}deg)`;
+    requestAnimationFrame(rotateLight);
+  }
+
+  rotateLight();
+});
+</script>
+
+</body>
+</html>

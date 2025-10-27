@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Topeng Cirebon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>Museum Topeng Cirebon</h1>
+    <p>Menelusuri sejarah dan seni topeng khas Cirebon dan Nusantara</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="koleksi.html">Koleksi</a></li>
+      <li><a href="vr.html">Kunjungan VR</a></li>
+      <li><a href="kontak.html">Galeri</a></li>
+      <li><a href="schedule.html">Jadwal</a></li>
+    </ul>
+  </nav>
+
+  <section class="home">
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="1.jpg" alt="Topeng Cirebon 1" width="500">
+    </div>
+    <div class="slide fade">
+      <img src="2.jpg" alt="Topeng Cirebon 2" width="500">
+    </div>
+    <div class="slide fade">
+      <img src="3.jpg.webp" alt="Topeng Cirebon 3" width="500">
+    </div>
+
+    <!-- Tombol navigasi -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <div class="home-text">
+    <h2>Selamat Datang di Museum Topeng Cirebon</h2>
+    <p>
+      Museum Topeng Cirebon merupakan tempat yang menyimpan dan melestarikan
+      berbagai topeng khas Cirebon dan Nusantara. Jelajahi seni dan filosofi 
+      di balik setiap topeng yang menjadi bagian penting dari budaya Indonesia.
+    </p>
+    <a href="https://www.google.com/maps/place/Museum+Topeng+Cirebon" 
+       target="_blank" class="map-btn">📍 Lihat di Maps</a>
+  </div>
+</section>
+
+
+  <section class="sejarah">
+    <h2>Sejarah Museum Topeng Cirebon</h2>
+    <p>
+      Museum Topeng Cirebon didirikan dalam rangka pemanfaatan Cagar Budaya Gedung Balai Kota Cirebon. 
+      Cagar Budaya Gedung Balai Kota Cirebon yang dahulu dikenal sebagai Gemeentehuis Cheribon, 
+      merupakan gedung yang berfungsi sebagai kantor Wali Kota (Stadhuis) dan Dewan Kota (Radhuis) Cirebon. 
+      Bangunan yang diresmikan pada tahun 1927 ini dibangun menyusul pembentukan Gemeente Cirebon. 
+      Gedung dengan ciri khas gaya Art Deco ini menjadi tempat pusat pemerintahan Kota Cirebon pada masa lalu, 
+      dan masa kini menjadi salah satu landmark Kota Cirebon.
+    </p>
+    <p>
+      Pengalihan fungsi Balai Kota Cirebon sebagai Museum Topeng Cirebon merupakan salah satu upaya 
+      Pelindungan dan Pemanfaatan Cagar Budaya Cirebon agar bangunan cagar budaya tidak hanya lestari, 
+      tetapi juga dapat berguna bagi masyarakat luas. 
+      Menurut Peraturan Pemerintah No. 66 Tahun 2015 tentang Museum, Museum adalah lembaga yang berfungsi 
+      melindungi, mengembangkan, memanfaatkan koleksi, dan mengomunikasikannya kepada masyarakat.
+    </p>
+    <p>
+      Sebagai museum yang berada di daerah, Museum Topeng Cirebon dapat menjadi rumah warisan budaya 
+      dan ekspresi budaya yang berada di garda terdepan. 
+      Adanya pendirian Museum Topeng Cirebon memunculkan banyak potensi terkait dengan pelestarian kebudayaan 
+      dan juga pendukungan pemajuan kebudayaan yang berdampak terhadap banyak sektor kehidupan.
+    </p>
+    <h3>Peran Museum Topeng Cirebon dalam Pemajuan Kebudayaan:</h3>
+    <ol>
+      <li><strong>Sarana Pelindungan Kebudayaan:</strong> 
+        Melalui pengelolaan koleksi dan edukasi, museum membantu melestarikan kebudayaan topeng Cirebon, 
+        serta mendorong generasi muda untuk berpartisipasi dalam pelestarian budaya.</li>
+      <li><strong>Sarana Informasi Kebudayaan:</strong> 
+        Museum menjadi wadah untuk memperkenalkan budaya Cirebon yang kaya kepada masyarakat luas.</li>
+      <li><strong>Wadah Ekspresi Budaya:</strong> 
+        Area museum dapat digunakan sebagai ruang seni dan kegiatan budaya masyarakat.</li>
+      <li><strong>Wisata Edukasi:</strong> 
+        Terletak di pusat kota, museum ini berpotensi menjadi pusat informasi kebudayaan 
+        yang menghubungkan berbagai destinasi wisata budaya di Cirebon.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Museum Topeng Cirebon | Jl. Siliwangi, Kejaksan, Kota Cirebon</p>
+  </footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // ganti tiap 3 detik
+}
+
+// Tombol prev/next
+function plusSlides(n) {
+  slideIndex += n - 1;
+  showSlides();
+}
+</script>
+
+</body>
+</html>

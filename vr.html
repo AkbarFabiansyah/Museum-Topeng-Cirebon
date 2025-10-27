@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunjungan VR - Museum Topeng Cirebon</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Kunjungan Virtual</h1>
+    <p>Jelajahi Museum Topeng Cirebon dalam mode 360° dan VR</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="koleksi.html">Koleksi</a></li>
+      <li><a href="vr.html" class="active">Kunjungan VR</a></li>
+      <li><a href="kontak.html">Galeri</a></li>
+      <li><a href="schedule.html">Jadwal</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 style="text-align:center;">Tampilan 360° Google Maps</h2>
+    <div class="vr-container">
+      <iframe 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34277.22164295495!2d108.55800868856336!3d-6.704721697146322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee300514d75a1%3A0xab9192381e232997!2sMuseum%20Topeng%20Cirebon!5e0!3m2!1sid!2sid!4v1761431663123!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </iframe>
+    </div>
+
+    <h2 style="text-align:center; margin-top:40px;">Mode VR Interaktif</h2>
+    <div class="vr-box">
+      <a-scene embedded style="height: 400px;">
+        <a-sky src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" rotation="0 -130 0"></a-sky>
+      </a-scene>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Museum Topeng Cirebon</p>
+  </footer>
+
+</body>
+</html>
